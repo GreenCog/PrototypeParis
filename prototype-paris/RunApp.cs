@@ -11,7 +11,7 @@ namespace prototype_paris
         private double montantTotal;
         private double montantGagnants;
         private double plateforme;
-        public List<Utilisateur> gagnants = new List<Utilisateur>();
+        public List<Pari> gagnants = new List<Pari>();
         public RunApp() { }
 
         public void Run() {
@@ -33,14 +33,14 @@ namespace prototype_paris
             Utilisateur utilisateur7 = new Utilisateur(7, "Mateo");
             Utilisateur utilisateur8 = new Utilisateur(8, "Daniel");
             
-            Pari_victoire paris_victoire1 = new Pari_victoire(1, match, equipeA, utilisateur1, 100);
+            Pari_victoire paris_victoire1 = new Pari_victoire(1, match, equipeA, utilisateur1, 200);
             Pari_victoire paris_victoire2 = new Pari_victoire(2, match, equipeA, utilisateur2, 100);
-            Pari_victoire paris_victoire3 = new Pari_victoire(3, match, equipeA, utilisateur3, 100);
-            Pari_victoire paris_victoire4 = new Pari_victoire(4, match, equipeA, utilisateur4, 100);
-            Pari_victoire paris_victoire5 = new Pari_victoire(5, match, equipeA, utilisateur5, 100);
-            Pari_victoire paris_victoire6 = new Pari_victoire(6, match, equipeA, utilisateur6, 100);
-            Pari_victoire paris_victoire7 = new Pari_victoire(7, match, equipeB, utilisateur7, 100);
-            Pari_victoire paris_victoire8 = new Pari_victoire(8, match, equipeB, utilisateur8, 100);
+            Pari_victoire paris_victoire3 = new Pari_victoire(3, match, equipeA, utilisateur3, 150);
+            Pari_victoire paris_victoire4 = new Pari_victoire(4, match, equipeA, utilisateur4, 320);
+            Pari_victoire paris_victoire5 = new Pari_victoire(5, match, equipeA, utilisateur5, 50);
+            Pari_victoire paris_victoire6 = new Pari_victoire(6, match, equipeA, utilisateur6, 35);
+            Pari_victoire paris_victoire7 = new Pari_victoire(7, match, equipeB, utilisateur7, 550);
+            Pari_victoire paris_victoire8 = new Pari_victoire(8, match, equipeB, utilisateur8, 90);
             
             List<Pari> paris = new List<Pari>();
             paris.Add(paris_victoire1);
@@ -57,8 +57,9 @@ namespace prototype_paris
                 montantTotal += p.getMontant();
 
                 if (p.getMatch().Getscore_equipeA() > p.getMatch().Getscore_equipeB() && p.getEquipe().getNom() == p.getMatch().Getequipes()[0].getNom()) {
-                    gagnants.Add(p.getParieur());
+                    gagnants.Add(p);
                     Console.WriteLine("Gagnant: " + p.getParieur().getNomUtilisateur());
+                    montantGagnants += p.getMontant();
                 }
             }
 
@@ -66,7 +67,17 @@ namespace prototype_paris
             plateforme = montantTotal * 0.1;
             montantTotal -= plateforme;
             Console.WriteLine("Plateforme: " + plateforme);
-            Console.WriteLine("Montant total redistribué: " + montantTotal);
+            Console.WriteLine("Montant total à redistribuer: " + montantTotal);
+            montantTotal -= montantGagnants;
+            Console.WriteLine("Montant total à répartir: " + montantTotal);
+
+            foreach (Pari_victoire g in gagnants)
+            {
+                double pourcentageTotalGagnant = g.getMontant() / montantGagnants;
+                double a_redistribuer = Math.Round((montantTotal * pourcentageTotalGagnant), 2);
+
+                Console.WriteLine("Gagnant: " + g.getParieur().getNomUtilisateur() + " a parier: " + g.getMontant() + " gagne : " + a_redistribuer); 
+            }
         }
     }
 }
