@@ -1,0 +1,15 @@
+C:\Users\NeyzaX\source\repos\prototype-paris\prototype-paris\obj\Debug\net6.0\prototype-paris.csproj.AssemblyReference.cache
+C:\Users\NeyzaX\source\repos\prototype-paris\prototype-paris\obj\Debug\net6.0\prototype-paris.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NeyzaX\source\repos\prototype-paris\prototype-paris\obj\Debug\net6.0\prototype-paris.AssemblyInfoInputs.cache
+C:\Users\NeyzaX\source\repos\prototype-paris\prototype-paris\obj\Debug\net6.0\prototype-paris.AssemblyInfo.cs
+C:\Users\NeyzaX\source\repos\prototype-paris\prototype-paris\obj\Debug\net6.0\prototype-paris.csproj.CoreCompileInputs.cache
+C:\Users\NeyzaX\source\repos\prototype-paris\prototype-paris\bin\Debug\net6.0\prototype-paris.exe
+C:\Users\NeyzaX\source\repos\prototype-paris\prototype-paris\bin\Debug\net6.0\prototype-paris.deps.json
+C:\Users\NeyzaX\source\repos\prototype-paris\prototype-paris\bin\Debug\net6.0\prototype-paris.runtimeconfig.json
+C:\Users\NeyzaX\source\repos\prototype-paris\prototype-paris\bin\Debug\net6.0\prototype-paris.dll
+C:\Users\NeyzaX\source\repos\prototype-paris\prototype-paris\bin\Debug\net6.0\prototype-paris.pdb
+C:\Users\NeyzaX\source\repos\prototype-paris\prototype-paris\obj\Debug\net6.0\prototype-paris.dll
+C:\Users\NeyzaX\source\repos\prototype-paris\prototype-paris\obj\Debug\net6.0\refint\prototype-paris.dll
+C:\Users\NeyzaX\source\repos\prototype-paris\prototype-paris\obj\Debug\net6.0\prototype-paris.pdb
+C:\Users\NeyzaX\source\repos\prototype-paris\prototype-paris\obj\Debug\net6.0\prototype-paris.genruntimeconfig.cache
+C:\Users\NeyzaX\source\repos\prototype-paris\prototype-paris\obj\Debug\net6.0\ref\prototype-paris.dll
