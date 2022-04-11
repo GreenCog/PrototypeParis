@@ -8,19 +8,24 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\NeyzaX\\.nuget\\packages\\": {}
+    "C:\\Users\\tanmonnier\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\NeyzaX\\source\\repos\\prototype-paris\\prototype-paris\\prototype-paris.csproj",
+      "projectUniqueName": "C:\\Users\\tanmonnier\\Desktop\\prototype-paris\\proto\\PrototypeParis\\prototype-paris\\prototype-paris.csproj",
       "projectName": "prototype-paris",
-      "projectPath": "C:\\Users\\NeyzaX\\source\\repos\\prototype-paris\\prototype-paris\\prototype-paris.csproj",
-      "packagesPath": "C:\\Users\\NeyzaX\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\NeyzaX\\source\\repos\\prototype-paris\\prototype-paris\\obj\\",
+      "projectPath": "C:\\Users\\tanmonnier\\Desktop\\prototype-paris\\proto\\PrototypeParis\\prototype-paris\\prototype-paris.csproj",
+      "packagesPath": "C:\\Users\\tanmonnier\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tanmonnier\\Desktop\\prototype-paris\\proto\\PrototypeParis\\prototype-paris\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\NeyzaX\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tanmonnier\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

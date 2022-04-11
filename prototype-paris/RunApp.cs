@@ -72,7 +72,7 @@ namespace prototype_paris
             }
 
             Console.WriteLine("Montant total: " + montantTotal);
-            plateforme = montantTotal * 0.1;
+            plateforme = (montantTotal- montantGagnants) * 0.1;
             montantTotal -= plateforme;
             Console.WriteLine("Plateforme: " + plateforme);
             Console.WriteLine("Montant total à redistribuer: " + montantTotal);
@@ -143,15 +143,28 @@ namespace prototype_paris
             {
                 montantTotal += p.getMontant();
 
-                if (p.getMatch().Getscore_equipeA() == p.Score || p.getMatch().Getscore_equipeB() == p.Score) {
-                    gagnants.Add(p);
-                    Console.WriteLine("Gagnant: " + p.getParieur().getNomUtilisateur());
-                    montantGagnants += p.getMontant();
+                if (p.Equipe.getNom() == "EquipeA") {
+                    if (p.Score == p.getMatch().Getscore_equipeA())
+                    {
+                        gagnants.Add(p);
+                        Console.WriteLine("Gagnant: " + p.getParieur().getNomUtilisateur());
+                        montantGagnants += p.getMontant();
+                    }
+                   
+                }
+                else
+                {
+                    if (p.Score == p.getMatch().Getscore_equipeB())
+                    {
+                        gagnants.Add(p);
+                        Console.WriteLine("Gagnant: " + p.getParieur().getNomUtilisateur());
+                        montantGagnants += p.getMontant();
+                    }
                 }
             }
 
             Console.WriteLine("Montant total: " + montantTotal);
-            plateforme = montantTotal * 0.1;
+            plateforme = (montantTotal-montantGagnants )* 0.1;
             montantTotal -= plateforme;
             Console.WriteLine("Plateforme: " + plateforme);
             Console.WriteLine("Montant total à redistribuer: " + montantTotal);
